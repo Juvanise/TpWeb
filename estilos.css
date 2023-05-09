@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(134, 175, 211);
+}
+h1{
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+
+}
+nav a{
+    display: inline;
+    text-transform: uppercase;
+    color: #3a0eda;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+nav a:hover {
+    color: #281b02;
+    text-decoration: underline;
+}
+
+
+p{
+    font-size: 20px;
+    font-weight: inherit;
+}
+
+.redes{
+    
+    background-color: rgb(17, 13, 1);
+    margin-top: 20px;
+}
