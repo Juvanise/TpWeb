@@ -18,6 +18,33 @@
     <main>
         <h1>Contactanos</h1>
         <h2>Complete el formulario</h2>
+        <form action="" method="get" name="datos" onsubmit="return validar()">
+            <div class="container">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" >
+                    <span id="errorNombre" class="error">Debe ingresar un nombre valido de al menos tres caracteres</span>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Araujo">
+                    <span id="errorApellido" class="error">Debe ingresar un apellido valido de al menos tres caracteres</span>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <span id="errorEmail" class="error">Debe ingresar un mail valido</span>
+                </div>    
+                <div>
+                    <textarea id="mensaje" rows="3"></textarea>
+                </div>    
+                <div>
+                    <input type="submit" value="Enviar datos" class="submit">
+                </div>    
+            </div>    
+        </form>
+        
+        
     </main>
     <footer>
         <footer class="redes">
@@ -28,5 +55,6 @@
             <a href=""><img src="./img/twitter.png" alt="" width="50px"></a>
         </footer>
     </footer>
+<script src="./scripts/main.js"></script>    
 </body>
 </html>

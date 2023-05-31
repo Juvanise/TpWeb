@@ -1,5 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(134, 175, 211);
+    background-color: rgb(194, 180, 23);
 }
 h1{
     text-align: center;
@@ -29,11 +34,37 @@ nav a:hover {
 
 p{
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: inherit;
+    padding: 10px;
+}
+.productos{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.productos img{
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    display: none;
+    color: red;
 }
 
 .redes{
     
-    background-color: rgb(17, 13, 1);
+    background-color: rgb(129, 98, 6);
     margin-top: 20px;
 }
