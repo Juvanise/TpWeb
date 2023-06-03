@@ -16,14 +16,30 @@
         </nav>
     </header>
     <main>
+        <div class="container-main">
+            <div class="carrousel-container">
+                <div class="img-carrousel">
+                    <img src="./img/productos.jpg" alt="" class="img-slider">
+                    <img src="./img/mandalas.jpg" alt="" class="img-slider" >
+                    <img src="./img/pirograbado.jpg" alt="" class="img-slider">
+                </div>
+                <div class="img-carrousel">
+                    <img src="./img/varios.jpg" alt="" class="img-slider">
+                    <img src="./img/interior.jpg" alt="" class="img-slider">
+                    <img src="./img/platitos.jpg" alt="" class="img-slider">
+                </div>
+            </div>
+        <!-- buttons -->
+        <a class="prev" onclick="mSlide(-1)">&#10094;</a>
+        <a class="next" onclick="mSlide(1)">&#10095;</a>
+       
+
+        
         <h1>Artesanias Amanjuan</h1>
         <p>Atendido por sus propios dueños donde encontraras artesanias elaboradas a mano
             onix,madera,yeso,resina y muchas cosas mas..
         </p>
-        
-        <img id="banner" src="./img/entrada.jpg" alt="" width="100%">
-        
-        
+        </div>    
     </main>
     <footer class="redes">
         <a href=""><img src="./img/facebook.png" alt="" width="50px"></a>
@@ -32,5 +48,6 @@
         <a href=""><img src="./img/linkedin.png" alt="" width="50px"></a>
         <a href=""><img src="./img/twitter.png" alt="" width="50px"></a>
     </footer>
+<script src="./scripts/slider.js"></script>    
 </body>
 </html>

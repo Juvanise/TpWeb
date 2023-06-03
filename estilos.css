@@ -5,9 +5,17 @@
 }
 body{
     background-color: rgb(194, 180, 23);
+    
 }
-h1{
+main{
+    min-height: 75vh;
+}
+h1,h2{
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    min-height: 15vh;
 }
 nav{
     display: flex;
@@ -38,29 +46,84 @@ p{
     font-weight: inherit;
     padding: 10px;
 }
+.carrousel-container{
+display: flex; 
+justify-content: center;   
+    
+}
+.container-contacto{
+    background-image: url("./img/paisaje.jpg");
+}
 .productos{
     
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .productos img{
-    width: 30%;
+    width: 25%;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(16, 19, 19) ;
+    gap: 3px;
+    padding: 3px;
 }
+.img-slider{
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 5px;
+    
+
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    color: rgb(56, 73, 231);
+    padding: 15px;
+    top: 40%;
+    margin-left: 35px;
+    margin-right: 35px;
+    transition: 0.5s ease;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+  }
+  
+.prev:hover, .next:hover {
+    background-color: rgba(25, 56, 231, 0.8);
+    color: rgb(218, 219, 228);
+  }
+  
 
 form{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
-.container{
+.container-contacto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+input{
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
 }
 .error{
     display: none;
     color: red;
+}
+footer{
+    min-height: 15vh;
 }
 
 .redes{
