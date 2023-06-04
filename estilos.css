@@ -46,13 +46,21 @@ main{
     
     
 }
+.parrafos{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
 .carrousel-container{
 display: flex; 
 justify-content: center;   
     
 }
 .container-contacto{
-    background-image: url("./img/paisaje.jpg");
+    background-image: url("./img/entrada.jpg");
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -71,12 +79,28 @@ justify-content: center;
     box-shadow: 0 5px 15px rgb(16, 19, 19) ;
     gap: 3px;
     padding: 3px;
+    transition: 400ms;
+}
+.productos img:hover{ 
+    opacity: 0.6;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+}    
+iframe{
+border : solid rgb(162, 158, 158);
+border-radius: 1rem;
+margin: 1rem; 
 }
 .img-slider{
     height: 300px;
     width: 350px;
     margin: 10px;
     border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(212, 222, 193);
     
 
 }
@@ -150,7 +174,7 @@ footer{
 
 .container-redes{
     display: flex;
-    margin: 30px;
+    margin: 35px;
     justify-content: center;
 }
 
