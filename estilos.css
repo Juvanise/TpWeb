@@ -7,22 +7,17 @@ body{
     background-color: rgb(194, 180, 23);
     
 }
-main{
-    min-height: 75vh;
-}
+
 h1,h2{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header{
-    min-height: 15vh;
+    min-height: 10vh;
 }
 nav{
     display: flex;
     flex-wrap: wrap;
-    
-    
-
 }
 nav a{
     display: inline;
@@ -38,13 +33,18 @@ nav a:hover {
     color: #281b02;
     text-decoration: underline;
 }
-
-
-p{
+main{
+    min-height: 75vh;
+}
+.container p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: inherit;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 .carrousel-container{
 display: flex; 
@@ -53,6 +53,10 @@ justify-content: center;
 }
 .container-contacto{
     background-image: url("./img/paisaje.jpg");
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
 }
 .productos{
     
@@ -99,25 +103,43 @@ justify-content: center;
 .prev:hover, .next:hover {
     background-color: rgba(25, 56, 231, 0.8);
     color: rgb(218, 219, 228);
-  }
-  
-
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-}
-.container-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 input{
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px;
     margin: 10px;
 }
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 40%;
+    border-radius: 10px;
+}
+form label{
+    font-size: 30px;
+    font-weight: bold ;
+}
+.text-area{
+    width: 30%;
+}
+.enviar{
+    width: 25%;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
 .error{
     display: none;
     color: red;
@@ -126,8 +148,20 @@ footer{
     min-height: 15vh;
 }
 
-.redes{
-    
-    background-color: rgb(129, 98, 6);
-    margin-top: 20px;
+.container-redes{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
 }
+
+.copyright{
+    color: blue;
+    position: relative;
+    top: 65px;
+    left: 0;
+
+    
+}
+
+
+

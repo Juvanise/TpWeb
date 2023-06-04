@@ -10,9 +10,9 @@
 <body>
     <header>
         <nav>
-            <a href="#">Inicio</a>
+            <a href="./index.html">Inicio</a>
             <a href="./nosotros.html">Sobre nosotros </a>
-            <a href="./contacto.html">Contacto</a>
+            <a href="#">Contacto</a>
         </nav>
     </header>
     <main>
@@ -26,33 +26,32 @@
                     <span id="errorNombre" class="error">Debe ingresar un nombre valido de al menos tres caracteres</span>
                 </div>
                 <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Araujo">
-                    <span id="errorApellido" class="error">Debe ingresar un apellido valido de al menos tres caracteres</span>
-                </div>
-                <div>
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email">
                     <span id="errorEmail" class="error">Debe ingresar un mail valido</span>
                 </div>    
                 <div>
-                    <textarea id="mensaje" rows="3"></textarea>
+                    <textarea id="mensaje" rows="3" class="text-area">¿Comentarios?</textarea>
+                    <span id="errorMensaje" class="error">Falta mensaje </span>
                 </div>    
                 <div>
-                    <input type="submit" value="Enviar datos" class="submit">
-                </div>    
+                    <input type="submit" value="Enviar datos" class="enviar">
+                </div>
+              
             </div>    
         </form>
-        
-        
+    
     </main>
     <footer>
-        <footer class="redes">
-            <a href=""><img src="./img/facebook.png" alt="" width="50px"></a>
-            <a href=""><img src="./img/github.png" alt="" width="50px"></a>
-            <a href=""><img src="./img/instagram.png" alt="" width="50px"></a>
-            <a href=""><img src="./img/linkedin.png" alt=""width="50px" ></a>
-            <a href=""><img src="./img/twitter.png" alt="" width="50px"></a>
+        <footer class="container-redes">
+            <div class="social"> 
+                <a href=""><img src="./img/facebook.png" alt="" width="50px"></a>
+                <a href=""><img src="./img/github.png" alt="" width="50px"></a>
+                <a href=""><img src="./img/instagram.png" alt="" width="50px"></a>
+                <a href=""><img src="./img/linkedin.png" alt=""width="50px" ></a>
+                <a href=""><img src="./img/twitter.png" alt="" width="50px"></a>
+            </div>
+            <p class="copyright">&copy; Copyright Amanjuan - 2023</p>
         </footer>
     </footer>
 <script src="./scripts/main.js"></script>    
