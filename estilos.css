@@ -3,17 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(194, 180, 23);
-    
-}
+/* Estilo para el fondo de la página */
+body {
+    background-color: #d0cdcd; /* Color gris claro de fondo */
+  }
+  
 
 h1,h2{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-header{
+/* Estilo para el encabezado */
+header {
     min-height: 10vh;
+    background-color: #0c0101; /* Color negro de fondo */
+    color: #ffffff; /* Color de texto blanco */
 }
 nav{
     display: flex;
@@ -22,7 +26,8 @@ nav{
 nav a{
     display: inline;
     text-transform: uppercase;
-    color: #3a0eda;
+    color: #faf9f7;
+    
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
@@ -30,11 +35,11 @@ nav a{
 
 }
 nav a:hover {
-    color: #281b02;
+    color: #9483cf;
     text-decoration: underline;
 }
 main{
-    min-height: 75vh;
+    min-height: 80vh;
 }
 .container p{
     font-size: 20px;
@@ -100,7 +105,7 @@ margin: 1rem;
     margin: 10px;
     border-radius: 5px;
     padding: 20px;
-    background-color: rgb(212, 222, 193);
+    background-color:  #9483cf;
     
 
 }
@@ -112,7 +117,7 @@ margin: 1rem;
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    color: rgb(56, 73, 231);
+    color: rgb(6, 6, 12);
     padding: 15px;
     top: 40%;
     margin-left: 35px;
@@ -125,7 +130,7 @@ margin: 1rem;
   }
   
 .prev:hover, .next:hover {
-    background-color: rgba(25, 56, 231, 0.8);
+    background-color: rgba(3, 5, 18, 0.8);
     color: rgb(218, 219, 228);
 }
 input{
@@ -169,7 +174,7 @@ form label{
     color: red;
 }
 footer{
-    min-height: 15vh;
+    min-height: 10vh;
 }
 
 .container-redes{
@@ -178,14 +183,26 @@ footer{
     justify-content: center;
 }
 
-.copyright{
+/*.copyright{
     color: blue;
     position: relative;
     top: 65px;
     left: 0;
 
     
-}
+}*/
+/* Estilo para el footer */
+footer {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff; /* Letras blancas */
+    text-align: center; /* Centrado del contenido */
+    padding: 20px; /* Espacio interno */
+  }
+  .copyright{
+    text-align: left; /* Alineación a la izquierda */
+  }
+
+  
 
 
 

@@ -19,7 +19,7 @@ function validar(){
         document.getElementById('errorNombre'.style.display = 'none');
     }
     
-    if(!patron.test(email.value)){
+     if(!patron.test(email.value)){
         document.getElementById('errorEmail').style.display = 'inline';
         email.focus;
         return false;
